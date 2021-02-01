@@ -11,24 +11,24 @@ client.on('ready', () => {
 
 let gifMap = new Map([
     ['.bleach' , 'https://media.giphy.com/media/StFlcHVnuz6Yy6mxcq/giphy.gif'],
-    ['.tired', 'https://tenor.com/view/tired-gif-8853358'],
-    ['.please', 'https://tenor.com/view/puss-in-boots-cat-cute-gif-4845429'],
-    ['.wink', 'https://tenor.com/view/mr-bean-wink-wink-winking-rowan-atkinson-gif-15388297'],
-    ['.wow', 'https://tenor.com/view/parks-and-rec-andy-dwyer-chris-pratt-jaw-drop-shocked-gif-4421172'],
-    ['.stare', 'https://tenor.com/view/awkward-stare-dog-stare-dog-brows-funny-gif-12521793'],
-    ['.confused', 'https://tenor.com/view/umm-confused-wtf-blinking-okay-gif-7513882'],
-    ['.why1', 'https://tenor.com/view/whyyyy-why-gif-19236077'],
-    ['.why2', 'https://tenor.com/view/confused-white-persian-guardian-why-gif-11908780'],
-    ['.hug', 'https://tenor.com/view/milk-and-mocha-hugs-bear-couple-love-cute-gif-12498539'],
-    ['.sorry', 'https://tenor.com/view/im-sorry-bow-puppy-eyes-apologize-gif-8326897'],
-    ['.hi', 'https://tenor.com/view/puppy-dog-wave-hello-hi-gif-13915833'],
-    ['.angry', 'https://tenor.com/view/peach-cat-angry-hmpf-gif-15230927'],
-    ['.yay', 'https://tenor.com/view/yay-minions-happiness-happy-excited-gif-7251359'],
-    ['.morning', 'https://tenor.com/view/cat-peek-aboo-kitty-white-cat-cute-cat-gif-16415828'],
-    ['.cry', 'https://tenor.com/view/crying-cry-rabbit-cute-adorable-gif-14580378'],
-    ['.laugh', 'https://tenor.com/view/spit-take-laugh-lmao-gif-9271200'],
-    ['.cheer', 'https://tenor.com/view/friends-chandler-joey-good-job-great-job-gif-12374537'],
-    ['.fine', 'https://tenor.com/view/blue-cry-sad-bad-day-gif-13423780'],
+    ['.tired', 'https://media1.tenor.com/images/364bed85abc6a6b0c6fee19ee769e4f2/tenor.gif'],
+    ['.please', 'https://media1.tenor.com/images/21c091602153cac1fc58d54373169863/tenor.gif'],
+    ['.wink', 'https://media1.tenor.com/images/de8665e1951d674380eb9f88152a9f27/tenor.gif'],
+    ['.wow', 'https://media1.tenor.com/images/3d124f67efd8e08b6fd3f0e748255a95/tenor.gif'],
+    ['.stare', 'https://media1.tenor.com/images/6ecc1a2747f44af476f7d101a7ea71f7/tenor.gif'],
+    ['.confused', 'https://media1.tenor.com/images/46d73c3cc50fa32e0e1d8c2a38007477/tenor.gif'],
+    ['.why1', 'https://media1.tenor.com/images/4a68f772736adb98d49a0e63d48b9f27/tenor.gif'],
+    ['.why2', 'https://media1.tenor.com/images/9fdf6ac1652c92984383ca5d6f392c9b/tenor.gif'],
+    ['.hug', 'https://media1.tenor.com/images/3264bcc47ee47ebbdd441f9f1d203542/tenor.gif'],
+    ['.sorry', 'https://media1.tenor.com/images/173a12d6975d4fac4f79702157086485/tenor.gif'],
+    ['.hi', 'https://media1.tenor.com/images/4835031d3191d4fe5ffad06def5e284d/tenor.gif'],
+    ['.angry', 'https://media1.tenor.com/images/0927367451ca401cbfeba87d654aecbf/tenor.gif'],
+    ['.yay', 'https://media1.tenor.com/images/5e659326c2027e01b2c56a8c6d7908e7/tenor.gif'],
+    ['.morning', 'https://media1.tenor.com/images/edaf739b81d33a554d6466303c1ef861/tenor.gif'],
+    ['.cry', 'https://media1.tenor.com/images/a846f5900be6196031711066e832ea11/tenor.gif'],
+    ['.laugh', 'https://media1.tenor.com/images/348caef7f383e12d740d7777726e54a3/tenor.gif'],
+    ['.cheer', 'https://media1.tenor.com/images/b94c3db38d669a1c08982ce8f5dfa531/tenor.gif'],
+    ['.fine', 'https://media1.tenor.com/images/0aa08aebc1df20acc900d1751b722f30/tenor.gif'],
 ]);
 
 client.on("message", message => {
@@ -44,79 +44,60 @@ client.on("message", message => {
                 fields: [
                     {
                         name: '.bleach',
-                        value: gifMap.get('.bleach')
                     },
                     {
                         name: '.tired',
-                        value: gifMap.get('.tired')
                     },
                     {
                         name: '.please',
-                        value: gifMap.get('.please')
                     },
                     {
                         name: '.wink',
-                        value: gifMap.get('.wink')
                     },
                     {
                         name: '.wow',
-                        value: gifMap.get('.wow')
                     },
                     {
                         name: '.stare',
-                        value: gifMap.get('.stare')
                     },
                     {
                         name: '.confused',
-                        value: gifMap.get('.confused')
                     },
                     {
                         name: '.why1',
-                        value: gifMap.get('.why1')
                     },
                     {
                         name: '.why2',
-                        value: gifMap.get('.why2')
                     },
                     {
                         name: '.hug',
-                        value: gifMap.get('.hug')
                     },
                     {
                         name: '.sorry',
-                        value: gifMap.get('.sorry')
                     },
                     {
                         name: '.hi',
-                        value: gifMap.get('.hi')
                     },
                     {
                         name: '.angry',
-                        value: gifMap.get('.angry')
                     },
                     {
                         name: '.yay',
-                        value: gifMap.get('.yay')
                     },
                     {
                         name: '.morning',
-                        value: gifMap.get('.morning')
                     },
                     {
                         name: '.cry',
-                        value: gifMap.get('.cry')
                     },
                     {
                         name: '.laugh',
-                        value: gifMap.get('.laugh')
                     },
                     {
                         name: '.cheer',
-                        value: gifMap.get('.cheer')
                     },
                     {
                         name: '.fine',
-                        value: gifMap.get('.fine')
                     }
                 ]
             }
