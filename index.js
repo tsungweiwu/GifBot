@@ -44,60 +44,79 @@ client.on("message", message => {
                 fields: [
                     {
                         name: '.bleach',
+                        value: gifMap.get('.bleach')
                     },
                     {
                         name: '.tired',
+                        value: gifMap.get('.tired')
                     },
                     {
                         name: '.please',
+                        value: gifMap.get('.please')
                     },
                     {
                         name: '.wink',
+                        value: gifMap.get('.wink')
                     },
                     {
                         name: '.wow',
+                        value: gifMap.get('.wow')
                     },
                     {
                         name: '.stare',
+                        value: gifMap.get('.stare')
                     },
                     {
                         name: '.confused',
+                        value: gifMap.get('.confused')
                     },
                     {
                         name: '.why1',
+                        value: gifMap.get('.why1')
                     },
                     {
                         name: '.why2',
+                        value: gifMap.get('.why2')
                     },
                     {
                         name: '.hug',
+                        value: gifMap.get('.hug')
                     },
                     {
                         name: '.sorry',
+                        value: gifMap.get('.sorry')
                     },
                     {
                         name: '.hi',
+                        value: gifMap.get('.hi')
                     },
                     {
                         name: '.angry',
+                        value: gifMap.get('.angry')
                     },
                     {
                         name: '.yay',
+                        value: gifMap.get('.yay')
                     },
                     {
                         name: '.morning',
+                        value: gifMap.get('.morning')
                     },
                     {
                         name: '.cry',
+                        value: gifMap.get('.cry')
                     },
                     {
                         name: '.laugh',
+                        value: gifMap.get('.laugh')
                     },
                     {
                         name: '.cheer',
+                        value: gifMap.get('.cheer')
                     },
                     {
                         name: '.fine',
+                        value: gifMap.get('.fine')
                     }
                 ]
             }
