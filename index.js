@@ -60,112 +60,148 @@ client.on("message", message => {
                 color: '#ff7b00',
                 fields: [
                     {
+                        name: 'Bleach',
                         value: '.bleach',
                     },
                     {
+                        name: 'Kid Tired',
                         value: '.tired',
                     },
                     {
+                        name: 'Cat Please',
                         value: '.please',
                     },
                     {
+                        name: 'Bean Wink',
                         value: '.wink',
                     },
                     {
+                        name: 'Shock Wow',
                         value: '.wow',
                     },
                     {
+                        name: 'Dog Stare',
                         value: '.stare',
                     },
                     {
-                        value: '.confused',
+                        name: 'Confused',
+                        value: '.umm',
                     },
                     {
+                        name: 'Stitch Why',
                         value: '.why1',
                     },
                     {
+                        name: 'Why',
                         value: '.why2',
                     },
                     {
+                        name: 'Bear Hug',
                         value: '.hug',
                     },
                     {
+                        name: 'Sorry',
                         value: '.sorry',
                     },
                     {
+                        name: 'Pup Hi',
                         value: '.hi',
                     },
                     {
+                        name: 'Peach Angry',
                         value: '.angry',
                     },
                     {
+                        name: 'Minion Yay',
                         value: '.yay',
                     },
                     {
+                        name: 'Peach Morning',
                         value: '.morning',
                     },
                     {
+                        name: 'Bunny Cry',
                         value: '.cry',
                     },
                     {
+                        name: 'Spit Laugh',
                         value: '.laugh',
                     },
                     {
+                        name: 'You can do it',
                         value: '.cheer',
                     },
                     {
+                        name: 'Sadness Fine',
                         value: '.fine',
                     },
                     {
+                        name: 'Mullet WTF',
                         value: '.wtf',
                     },
                     {
+                        name: 'Bye Pikachu',
                         value: '.bye',
                     },
                     {
+                        name: 'Laugh Bear',
                         value: '.lol',
                     },
                     {
+                        name: 'Noob Alert',
                         value: '.noob',
                     },
                     {
+                        name: 'Pooh Hungry',
                         value: '.eat',
                     },
                     {
+                        name: 'Naruto Sigh',
                         value: '.sigh',
                     },
                     {
+                        name: 'Anime Girl Shocked',
                         value: '.shock',
                     },
                     {
+                        name: 'Yami Problem?',
                         value: '.prob',
                     },
                     {
+                        name: 'Unenthusiastic Wow',
                         value: '.wowcat',
                     },
                     {
+                        name: 'Look away kid',
                         value: '.look',
                     },
                     {
+                        name: 'Let\'s go Logan',
                         value: '.go',
                     },
                     {
+                        name: 'Baby SMH',
                         value: '.smh',
                     },
                     {
+                        name: 'Girl Panic',
                         value: '.panic',
                     },
                     {
+                        name: 'Upset Darn',
                         value: '.darn',
                     },
                     {
+                        name: 'Bear Evil Plan',
                         value: '.plan',
                     },
                     {
+                        name: 'Doing the dishes',
                         value: '.dishes',
                     },
                     {
-                        value: '.darn',
+                        name: 'Pat on head',
+                        value: '.pat',
                     }
                 ]
             }
