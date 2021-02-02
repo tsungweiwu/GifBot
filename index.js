@@ -49,13 +49,17 @@ let gifMap = new Map([
 ]);
 
 client.on("message", message => {
-    try {
-        if (gifMap.has(message.content)) {
-            const attachment = new Discord.MessageAttachment(gifMap.get(message.content));
+    if (gifMap.has(message.content)) {
+        const attachment = new Discord.MessageAttachment(gifMap.get(message.content));
+        try {
             return message.channel.send(attachment);
+        } catch (err) {
+            console.error(err);
         }
+    }
 
-        if (message.content === '.info') {
+    if (message.content === '.info') {
+        try {
             return message.channel.send('List of GIFS', {
                 embed: {
                     color: '#ff7b00',
@@ -207,8 +211,8 @@ client.on("message", message => {
                     ]
                 }
             })
+        } catch (err) {
+            console.error(err);
         }
-    } catch (e) {
-        console.log(e);
     }
 })
