@@ -46,6 +46,20 @@ let gifMap = new Map([
     ['.plan', 'https://media1.tenor.com/images/bca5ea7298b3db7b160fa432c484de72/tenor.gif'],
     ['.dishes', 'https://media1.tenor.com/images/32a48bd55d3ed776b07d855199e34309/tenor.gif'],
     ['.pat', 'https://media1.tenor.com/images/8c1a53522a74129607b870910ac288f9/tenor.gif'],
+    ['.ty', 'https://media1.tenor.com/images/1114067881329bb4218880eeb7ec34fd/tenor.gif'],
+    ['.ty2', 'https://media.giphy.com/media/4BylJD2QxStzO/giphy.gif'],
+    ['.yw', 'https://media.giphy.com/media/XaA0fpudSHPf4MPlEK/giphy.gif'],
+    ['.sus', 'https://media1.tenor.com/images/28f49f4fcfbe4631ec685cccb88d3a99/tenor.gif'],
+    ['.among', 'https://media1.tenor.com/images/b4082c28645cbb89464df3fdb042c03c/tenor.gif'],
+    ['.idk', 'https://media1.tenor.com/images/ce441e4f0e6f115e9eb1b321955c1b80/tenor.gif'],
+    ['.ouch', 'https://media1.tenor.com/images/24b2abb0843d3287844ebd5f6b4dc371/tenor.gif'],
+    ['.eww', 'https://media1.tenor.com/images/136e3fcc088691d0947268428d2c531a/tenor.gif'],
+    ['.stress', 'https://media1.tenor.com/images/b50a1f6bd1ca2b29a222b2469504b426/tenor.gif'],
+    ['.hi5', 'https://media1.tenor.com/images/7ffa3616a1884115584f4abd31d01255/tenor.gif'],
+    ['.clap', 'https://media1.tenor.com/images/8c8f18bec7ba6a1b7ddc2ef76664e9ae/tenor.gif'],
+    ['.aww', 'https://media1.tenor.com/images/bf35b472c70f4e79ec841d501bdb9cd0/tenor.gif'],
+    ['.oops', 'https://media1.tenor.com/images/8474b0f567704b752354d6e5a589784b/tenor.gif']
+
 ]);
 
 client.on("message", message => {
@@ -67,7 +81,8 @@ client.on("message", message => {
                         '.umm\n.why1\n.why2\n.hug\n.sorry\n.hi\n.angry\n.yay\n' +
                         '.morning\n.cry\n.laugh\n.cheer\n.fine\n.wtf\n.bye\n.lol\n' +
                         '.noob\n.eat\n.sigh\n.shock\n.prob\n.wowcat\n.look\n.go\n' +
-                        '.smh\n.panic\n.darn\n.plan\n.dishes\n.pat'
+                        '.smh\n.panic\n.darn\n.plan\n.dishes\n.pat\n.ty\n.ty2\n.yw\n' +
+                        '.sus\n.among\n.idk\n.ouch\n.eww\n.stress\n.hi5\n.clap\n.aww\n.oops\n'
                 }
             })
         } catch (err) {
