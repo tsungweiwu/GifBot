@@ -45,166 +45,170 @@ let gifMap = new Map([
     ['.darn', 'https://media1.tenor.com/images/a18944287abb101203e4bb362672c2b2/tenor.gif'],
     ['.plan', 'https://media1.tenor.com/images/bca5ea7298b3db7b160fa432c484de72/tenor.gif'],
     ['.dishes', 'https://media1.tenor.com/images/32a48bd55d3ed776b07d855199e34309/tenor.gif'],
-    ['.pat', 'https://media1.tenor.com/images/8c1a53522a74129607b870910ac288f9/tenor.gif']
+    ['.pat', 'https://media1.tenor.com/images/8c1a53522a74129607b870910ac288f9/tenor.gif'],
 ]);
 
 client.on("message", message => {
-    if (gifMap.has(message.content)) {
-        const attachment = new Discord.MessageAttachment(gifMap.get(message.content));
-        return message.channel.send(attachment);
-    }
+    try {
+        if (gifMap.has(message.content)) {
+            const attachment = new Discord.MessageAttachment(gifMap.get(message.content));
+            return message.channel.send(attachment);
+        }
 
-    if (message.content === '.info') {
-        return message.channel.send('List of GIFS', {
-            embed: {
-                color: '#ff7b00',
-                fields: [
-                    {
-                        name: 'Bleach',
-                        value: '.bleach',
-                    },
-                    {
-                        name: 'Kid Tired',
-                        value: '.tired',
-                    },
-                    {
-                        name: 'Cat Please',
-                        value: '.please',
-                    },
-                    {
-                        name: 'Bean Wink',
-                        value: '.wink',
-                    },
-                    {
-                        name: 'Shock Wow',
-                        value: '.wow',
-                    },
-                    {
-                        name: 'Dog Stare',
-                        value: '.stare',
-                    },
-                    {
-                        name: 'Confused',
-                        value: '.umm',
-                    },
-                    {
-                        name: 'Stitch Why',
-                        value: '.why1',
-                    },
-                    {
-                        name: 'Why',
-                        value: '.why2',
-                    },
-                    {
-                        name: 'Bear Hug',
-                        value: '.hug',
-                    },
-                    {
-                        name: 'Sorry',
-                        value: '.sorry',
-                    },
-                    {
-                        name: 'Pup Hi',
-                        value: '.hi',
-                    },
-                    {
-                        name: 'Peach Angry',
-                        value: '.angry',
-                    },
-                    {
-                        name: 'Minion Yay',
-                        value: '.yay',
-                    },
-                    {
-                        name: 'Peach Morning',
-                        value: '.morning',
-                    },
-                    {
-                        name: 'Bunny Cry',
-                        value: '.cry',
-                    },
-                    {
-                        name: 'Spit Laugh',
-                        value: '.laugh',
-                    },
-                    {
-                        name: 'You can do it',
-                        value: '.cheer',
-                    },
-                    {
-                        name: 'Sadness Fine',
-                        value: '.fine',
-                    },
-                    {
-                        name: 'Mullet WTF',
-                        value: '.wtf',
-                    },
-                    {
-                        name: 'Bye Pikachu',
-                        value: '.bye',
-                    },
-                    {
-                        name: 'Laugh Bear',
-                        value: '.lol',
-                    },
-                    {
-                        name: 'Noob Alert',
-                        value: '.noob',
-                    },
-                    {
-                        name: 'Pooh Hungry',
-                        value: '.eat',
-                    },
-                    {
-                        name: 'Naruto Sigh',
-                        value: '.sigh',
-                    },
-                    {
-                        name: 'Anime Girl Shocked',
-                        value: '.shock',
-                    },
-                    {
-                        name: 'Yami Problem?',
-                        value: '.prob',
-                    },
-                    {
-                        name: 'Unenthusiastic Wow',
-                        value: '.wowcat',
-                    },
-                    {
-                        name: 'Look away kid',
-                        value: '.look',
-                    },
-                    {
-                        name: 'Lets go Logan',
-                        value: '.go',
-                    },
-                    {
-                        name: 'Baby SMH',
-                        value: '.smh',
-                    },
-                    {
-                        name: 'Girl Panic',
-                        value: '.panic',
-                    },
-                    {
-                        name: 'Upset Darn',
-                        value: '.darn',
-                    },
-                    {
-                        name: 'Bear Evil Plan',
-                        value: '.plan',
-                    },
-                    {
-                        name: 'Doing the dishes',
-                        value: '.dishes',
-                    },
-                    {
-                        name: 'Pat on head',
-                        value: '.pat',
-                    }
-                ]
-            }
-        })
+        if (message.content === '.info') {
+            return message.channel.send('List of GIFS', {
+                embed: {
+                    color: '#ff7b00',
+                    fields: [
+                        {
+                            name: 'Bleach',
+                            value: '.bleach',
+                        },
+                        {
+                            name: 'Kid Tired',
+                            value: '.tired',
+                        },
+                        {
+                            name: 'Cat Please',
+                            value: '.please',
+                        },
+                        {
+                            name: 'Bean Wink',
+                            value: '.wink',
+                        },
+                        {
+                            name: 'Shock Wow',
+                            value: '.wow',
+                        },
+                        {
+                            name: 'Dog Stare',
+                            value: '.stare',
+                        },
+                        {
+                            name: 'Confused',
+                            value: '.umm',
+                        },
+                        {
+                            name: 'Stitch Why',
+                            value: '.why1',
+                        },
+                        {
+                            name: 'Why',
+                            value: '.why2',
+                        },
+                        {
+                            name: 'Bear Hug',
+                            value: '.hug',
+                        },
+                        {
+                            name: 'Sorry',
+                            value: '.sorry',
+                        },
+                        {
+                            name: 'Pup Hi',
+                            value: '.hi',
+                        },
+                        {
+                            name: 'Peach Angry',
+                            value: '.angry',
+                        },
+                        {
+                            name: 'Minion Yay',
+                            value: '.yay',
+                        },
+                        {
+                            name: 'Peach Morning',
+                            value: '.morning',
+                        },
+                        {
+                            name: 'Bunny Cry',
+                            value: '.cry',
+                        },
+                        {
+                            name: 'Spit Laugh',
+                            value: '.laugh',
+                        },
+                        {
+                            name: 'You can do it',
+                            value: '.cheer',
+                        },
+                        {
+                            name: 'Sadness Fine',
+                            value: '.fine',
+                        },
+                        {
+                            name: 'Mullet WTF',
+                            value: '.wtf',
+                        },
+                        {
+                            name: 'Bye Pikachu',
+                            value: '.bye',
+                        },
+                        {
+                            name: 'Laugh Bear',
+                            value: '.lol',
+                        },
+                        {
+                            name: 'Noob Alert',
+                            value: '.noob',
+                        },
+                        {
+                            name: 'Pooh Hungry',
+                            value: '.eat',
+                        },
+                        {
+                            name: 'Naruto Sigh',
+                            value: '.sigh',
+                        },
+                        {
+                            name: 'Anime Girl Shocked',
+                            value: '.shock',
+                        },
+                        {
+                            name: 'Yami Problem?',
+                            value: '.prob',
+                        },
+                        {
+                            name: 'Unenthusiastic Wow',
+                            value: '.wowcat',
+                        },
+                        {
+                            name: 'Look away kid',
+                            value: '.look',
+                        },
+                        {
+                            name: 'Lets go Logan',
+                            value: '.go',
+                        },
+                        {
+                            name: 'Baby SMH',
+                            value: '.smh',
+                        },
+                        {
+                            name: 'Girl Panic',
+                            value: '.panic',
+                        },
+                        {
+                            name: 'Upset Darn',
+                            value: '.darn',
+                        },
+                        {
+                            name: 'Bear Evil Plan',
+                            value: '.plan',
+                        },
+                        {
+                            name: 'Doing the dishes',
+                            value: '.dishes',
+                        },
+                        {
+                            name: 'Pat on head',
+                            value: '.pat',
+                        }
+                    ]
+                }
+            })
+        }
+    } catch (e) {
+        console.log(e);
     }
 })
