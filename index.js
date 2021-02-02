@@ -176,7 +176,7 @@ client.on("message", message => {
                         value: '.look',
                     },
                     {
-                        name: 'Let\'s go Logan',
+                        name: 'Lets go Logan',
                         value: '.go',
                     },
                     {
