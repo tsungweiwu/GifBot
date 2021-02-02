@@ -31,7 +31,7 @@ let gifMap = new Map([
     ['.fine', 'https://media1.tenor.com/images/0aa08aebc1df20acc900d1751b722f30/tenor.gif'],
     ['.wtf', 'https://media1.tenor.com/images/f19e98e6c506dbb2ca5cbb0a45afb2e0/tenor.gif'],
     ['.bye', 'https://media1.tenor.com/images/5fdae67034e3b441d6cfe627f982702a/tenor.gif'],
-    ['.lol', 'https://media1.tenor.com/images/db7e32a2b19066a898bf4e4749fa3a0c/tenor.gif'],
+    ['.lol', 'https://media.discordapp.net/attachments/710728878464958514/806262378881875968/lmao.gif'],
     ['.noob', 'https://media1.tenor.com/images/367942835f27cc7549d47939905b8d7f/tenor.gif'],
     ['.eat', 'https://media1.tenor.com/images/023fedab4097b47363e653160993e892/tenor.gif'],
     ['.sigh', 'https://media1.tenor.com/images/2f3faee59a3ce7c5825b32e1d35eac0a/tenor.gif'],
