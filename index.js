@@ -16,7 +16,7 @@ let gifMap = new Map([
     ['.wink', 'https://media1.tenor.com/images/de8665e1951d674380eb9f88152a9f27/tenor.gif'],
     ['.wow', 'https://media1.tenor.com/images/3d124f67efd8e08b6fd3f0e748255a95/tenor.gif'],
     ['.stare', 'https://media1.tenor.com/images/6ecc1a2747f44af476f7d101a7ea71f7/tenor.gif'],
-    ['.confused', 'https://media1.tenor.com/images/46d73c3cc50fa32e0e1d8c2a38007477/tenor.gif'],
+    ['.umm', 'https://media1.tenor.com/images/46d73c3cc50fa32e0e1d8c2a38007477/tenor.gif'],
     ['.why1', 'https://media1.tenor.com/images/4a68f772736adb98d49a0e63d48b9f27/tenor.gif'],
     ['.why2', 'https://media1.tenor.com/images/9fdf6ac1652c92984383ca5d6f392c9b/tenor.gif'],
     ['.hug', 'https://media1.tenor.com/images/3264bcc47ee47ebbdd441f9f1d203542/tenor.gif'],
@@ -29,6 +29,23 @@ let gifMap = new Map([
     ['.laugh', 'https://media1.tenor.com/images/348caef7f383e12d740d7777726e54a3/tenor.gif'],
     ['.cheer', 'https://media1.tenor.com/images/b94c3db38d669a1c08982ce8f5dfa531/tenor.gif'],
     ['.fine', 'https://media1.tenor.com/images/0aa08aebc1df20acc900d1751b722f30/tenor.gif'],
+    ['.wtf', 'https://media1.tenor.com/images/f19e98e6c506dbb2ca5cbb0a45afb2e0/tenor.gif'],
+    ['.bye', 'https://media1.tenor.com/images/5fdae67034e3b441d6cfe627f982702a/tenor.gif'],
+    ['.lol', 'https://media1.tenor.com/images/db7e32a2b19066a898bf4e4749fa3a0c/tenor.gif'],
+    ['.noob', 'https://media1.tenor.com/images/367942835f27cc7549d47939905b8d7f/tenor.gif'],
+    ['.eat', 'https://media1.tenor.com/images/023fedab4097b47363e653160993e892/tenor.gif'],
+    ['.sigh', 'https://media1.tenor.com/images/2f3faee59a3ce7c5825b32e1d35eac0a/tenor.gif'],
+    ['.shock', 'https://media1.tenor.com/images/2da0e351c8bd2269ce91e1e081a539d0/tenor.gif'],
+    ['.prob', 'https://media1.tenor.com/images/89f98868dbe7517ddfa0c0b58bb99b55/tenor.gif'],
+    ['.wowcat', 'https://media1.tenor.com/images/efed65e64ae92033afe38847a89e8d13/tenor.gif'],
+    ['.look', 'https://media1.tenor.com/images/bea184000835639c3e5eacb4591fb369/tenor.gif'],
+    ['.go', 'https://media1.tenor.com/images/11e0c7c6af4488e5f070ad8da65bd6fe/tenor.gif'],
+    ['.smh', 'https://media1.tenor.com/images/f9cda68d7efac6653953ac8d7468e251/tenor.gif'],
+    ['.panic', 'https://media1.tenor.com/images/991c7e987a994acfa837aa913e18c14a/tenor.gif'],
+    ['.darn', 'https://media1.tenor.com/images/a18944287abb101203e4bb362672c2b2/tenor.gif'],
+    ['.plan', 'https://media1.tenor.com/images/bca5ea7298b3db7b160fa432c484de72/tenor.gif'],
+    ['.dishes', 'https://media1.tenor.com/images/32a48bd55d3ed776b07d855199e34309/tenor.gif'],
+    ['.pat', 'https://media1.tenor.com/images/8c1a53522a74129607b870910ac288f9/tenor.gif']
 ]);
 
 client.on("message", message => {
@@ -43,80 +60,112 @@ client.on("message", message => {
                 color: '#ff7b00',
                 fields: [
                     {
-                        name: '.bleach',
-                        value: gifMap.get('.bleach')
+                        value: '.bleach',
                     },
                     {
-                        name: '.tired',
-                        value: gifMap.get('.tired')
+                        value: '.tired',
                     },
                     {
-                        name: '.please',
-                        value: gifMap.get('.please')
+                        value: '.please',
                     },
                     {
-                        name: '.wink',
-                        value: gifMap.get('.wink')
+                        value: '.wink',
                     },
                     {
-                        name: '.wow',
-                        value: gifMap.get('.wow')
+                        value: '.wow',
                     },
                     {
-                        name: '.stare',
-                        value: gifMap.get('.stare')
+                        value: '.stare',
                     },
                     {
-                        name: '.confused',
-                        value: gifMap.get('.confused')
+                        value: '.confused',
                     },
                     {
-                        name: '.why1',
-                        value: gifMap.get('.why1')
+                        value: '.why1',
                     },
                     {
-                        name: '.why2',
-                        value: gifMap.get('.why2')
+                        value: '.why2',
                     },
                     {
-                        name: '.hug',
-                        value: gifMap.get('.hug')
+                        value: '.hug',
                     },
                     {
-                        name: '.sorry',
-                        value: gifMap.get('.sorry')
+                        value: '.sorry',
                     },
                     {
-                        name: '.hi',
-                        value: gifMap.get('.hi')
+                        value: '.hi',
                     },
                     {
-                        name: '.angry',
-                        value: gifMap.get('.angry')
+                        value: '.angry',
                     },
                     {
-                        name: '.yay',
-                        value: gifMap.get('.yay')
+                        value: '.yay',
                     },
                     {
-                        name: '.morning',
-                        value: gifMap.get('.morning')
+                        value: '.morning',
                     },
                     {
-                        name: '.cry',
-                        value: gifMap.get('.cry')
+                        value: '.cry',
                     },
                     {
-                        name: '.laugh',
-                        value: gifMap.get('.laugh')
+                        value: '.laugh',
                     },
                     {
-                        name: '.cheer',
-                        value: gifMap.get('.cheer')
+                        value: '.cheer',
                     },
                     {
-                        name: '.fine',
-                        value: gifMap.get('.fine')
+                        value: '.fine',
+                    },
+                    {
+                        value: '.wtf',
+                    },
+                    {
+                        value: '.bye',
+                    },
+                    {
+                        value: '.lol',
+                    },
+                    {
+                        value: '.noob',
+                    },
+                    {
+                        value: '.eat',
+                    },
+                    {
+                        value: '.sigh',
+                    },
+                    {
+                        value: '.shock',
+                    },
+                    {
+                        value: '.prob',
+                    },
+                    {
+                        value: '.wowcat',
+                    },
+                    {
+                        value: '.look',
+                    },
+                    {
+                        value: '.go',
+                    },
+                    {
+                        value: '.smh',
+                    },
+                    {
+                        value: '.panic',
+                    },
+                    {
+                        value: '.darn',
+                    },
+                    {
+                        value: '.plan',
+                    },
+                    {
+                        value: '.dishes',
+                    },
+                    {
+                        value: '.darn',
                     }
                 ]
             }
