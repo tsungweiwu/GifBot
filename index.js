@@ -64,15 +64,7 @@ let gifMap = new Map([
 
 client.on("message", message => {
     if (gifMap.has(message.content)) {
-        sharp(input)
-            .resize({ width: 100 })
-            .toBuffer()
-            .then(data => {
-                // 100 pixels wide, auto-scaled height
-            });
         let attachment = new Discord.MessageAttachment(gifMap.get(message.content));
-        attachment.height = 150;
-        attachment.width = 150;
         try {
             return message.channel.send(attachment);
         } catch (err) {
