@@ -2,6 +2,7 @@ require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const TOKEN = process.env.TOKEN;
+const gifResize = require('@gumlet/gif-resize');
 
 client.login(TOKEN);
 
@@ -64,14 +65,17 @@ let gifMap = new Map([
 
 client.on("message", message => {
     if (gifMap.has(message.content)) {
-        const attachment = new Discord.MessageAttachment(gifMap.get(message.content));
-        attachment.height = 150;
-        attachment.width = 150;
-        try {
-            return message.channel.send(attachment);
-        } catch (err) {
-            console.error(err);
-        }
+        gifResize({
+            width: 150,
+            height: 150
+        })(gifMap.get(message.content)).then(data => {
+            let attachment = new Discord.MessageAttachment(data);
+            try {
+                return message.channel.send(attachment);
+            } catch (err) {
+                console.error(err);
+            }
+        })
     }
 
     if (message.content === '.info') {
