@@ -91,6 +91,11 @@ client.on("message", message => {
     }
 
     if (message.content === '.mock') {
+
+        if (message.author.id === '709659335554367510') {
+            return message.channel.send("Go away Kelly you suck. You don't have the right to use this.");
+        }
+
         let channel = message.channel// <-- your pre-filled channel variable
 
         channel.messages.fetch({ limit: 2 }).then(messages => {
