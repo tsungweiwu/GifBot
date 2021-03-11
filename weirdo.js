@@ -1,12 +1,50 @@
 require("dotenv").config();
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const request = require("request");
+const schedule = require('node-schedule')
 const TOKEN = process.env.TOKEN;
 
 client.login(TOKEN);
 
+// Quote
+var dailyQuote = new schedule.RecurrenceRule();
+dailyQuote.hour = 9;
+dailyQuote.minute = 00;
+dailyQuote.tz = 'America/New_York';
+//50 12 * * *
+var dailyQuote = schedule.scheduleJob(dailyQuote, function () {
+    request({
+        url: "https://quotes.rest/qod.json?category=inspire",
+        json: true
+    }, (err, response, body) => {
+        client.channels.cache.get('722277863021215808').send({
+            embed: {
+                footer: {
+                    text: "- " + body.contents.quotes[0].author + ", " + body.contents.quotes[0].date
+                },
+                title: body.contents.quotes[0].title,
+                description: body.contents.quotes[0].quote,
+                color: '#FFA500'
+            }
+        })
+
+        client.channels.cache.get('802278944761577502').send({
+            embed: {
+                footer: {
+                    text: "- " + body.contents.quotes[0].author + ", " + body.contents.quotes[0].date
+                },
+                title: body.contents.quotes[0].title,
+                description: body.contents.quotes[0].quote,
+                color: '#FFA500'
+            }
+        })
+    });
+})
+
 client.on("ready", () => {
-    console.info(`Logged in as ${client.user.tag}!`);
+    console.info(`Logged in as ${client.user.tag}! v1.1`);
+    dailyQuote.schedule();
 });
 
 let gifMap = new Map([
