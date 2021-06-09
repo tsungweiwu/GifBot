@@ -295,6 +295,24 @@ client.on("message", (message) => {
         }
     }
 
+    if (message.content === ".roast") {
+        let channel = message.channel; // <-- your pre-filled channel variable
+
+        request({
+            url: "https://evilinsult.com/generate_insult.php?lang=en&type=text",
+            json: true
+        }, (err, response, body) => {
+            if (message.content.includes('156232419219996672')) {
+                return channel.send('I shall not disrespect my creator <3')
+            }
+
+            if (!message.author.bot) {
+                // The author of the last message wasn't a bot
+                return channel.send(body);
+            }
+        });
+    }
+
     if (message.content === ".mock") {
         if (message.author.id === "369281626741407745") {
             return message.channel.send(
