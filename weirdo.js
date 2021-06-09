@@ -295,7 +295,7 @@ client.on("message", (message) => {
         }
     }
 
-    if (message.content === ".roast") {
+    if (message.content.includes(".roast")) {
         let channel = message.channel; // <-- your pre-filled channel variable
 
         request({
